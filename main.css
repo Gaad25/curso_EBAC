@@ -1,0 +1,195 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px; /* Adicionado um padding para melhor visualização em telas menores */
+}
+
+header, footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container, footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: block; /* Agora sempre visível */
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    display: block; /* Sempre visível */
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos li, .listas-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste corretamente */
+}
+
+.listas-veiculos li img, .lista-veiculos li img {
+    max-width: 100%;
+    height: auto; /* Torna as imagens responsivas */
+}
+
+.listas-veiculos li h3, .lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Estilos para Tablets */
+@media screen and (max-width: 1023px) {
+    .lista-veiculos li, .listas-veiculos li {
+        max-width: 45%;
+    }
+    /* Outros ajustes específicos para tablets podem ser adicionados aqui */
+}
+
+/* Estilos para Celulares */
+@media screen and (max-width: 600px) {
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .lista-veiculos li, .listas-veiculos li {
+        max-width: 100%;
+    }
+
+    #sobre-a-loja img, .listas-veiculos li img {
+        max-width: 100%;
+    }
+    /* Outros ajustes específicos para celulares podem ser adicionados aqui */
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
